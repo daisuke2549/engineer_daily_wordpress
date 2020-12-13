@@ -5,18 +5,14 @@
 <div class="wprofile">
 <div class="wpost-profile-image">
 <?php
-if (has_post_thumbnail() ) {
-// アイキャッチ画像が設定されてれば中サイズで表示
-the_post_thumbnail('medium');
-} else {
-// なければnoimage画像をデフォルトで表示
+
 echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/mypicture.png" alt="">';
-}
+
 ?>
 </div>
 <div class="wprofile-content">
 <p>Webエンジニアの佐々木大輔と申します。<br>HTML, CSS, JavaScript (jQuery), WordPress, <br>PHP (Laravel), MySQL, Drupal, githubが<br>使用可能技術となります。</p>
-</>
+</div>
 <!-- /wprofile-content -->
 <nav class="wprofile-sns">
 <div class="wprofile-sns-item m_twitter"><a href="" rel="noopener noreferrer" target="_blank"><i class="fab fa-twitter"></i></a></div>
